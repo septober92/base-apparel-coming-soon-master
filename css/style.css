@@ -1,0 +1,144 @@
+.mobile-hero-image {
+  display: none;
+}
+
+.hero-wrapper {
+  padding: 7rem 14rem;
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-size: cover;
+}
+
+.hero-logo {
+  width: 15rem;
+}
+
+h1 {
+  font-size: 5.5rem;
+  letter-spacing: 1.5rem;
+  text-transform: uppercase;
+  padding: 17rem 0 2.5rem;
+  line-height: 1.12;
+}
+
+h1 span {
+  display: block;
+}
+
+h1 span:first-of-type {
+  font-weight: 300;
+  color: var(--desaturated-red);
+}
+
+h1 span:nth-of-type(2) {
+  font-weight: 600;
+  color: var(--dark-grayish-red);
+}
+
+.hero-introduction-text {
+  max-width: 85%;
+  color: var(--desaturated-red);
+  font-size: 1.6rem;
+  font-weight: 400;
+  /* letter-spacing: 2px; */
+  line-height: 1.6;
+}
+
+.email_form {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  position: relative;
+  width: 87%;
+}
+
+label {
+  display: none;
+}
+
+input[type='email'] {
+  width: 100%;
+  border-radius: 3rem;
+  height: 5.5rem;
+  padding-top: 0.4rem;
+  padding-left: 2.5rem;
+  /* padding: 2rem 0 1.7rem 2rem; */
+  border: 1px solid #ce979780;
+  font-family: inherit;
+}
+
+input::placeholder {
+  font-size: 1.5rem;
+  color: var(--desaturated-red);
+  opacity: 0.5;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  height: 5.5rem;
+  border: none;
+  border-radius: 3rem;
+  padding: 0 4.3rem 0;
+  background-image: var(--gradient-pinkish);
+  background-size: 500% auto;
+  box-shadow: 0 1rem 2rem rgba(206, 151, 151, 0.5);
+
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  right: 0;
+
+  transition: all 0.5s ease-in-out;
+}
+
+#errorIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 29%;
+  width: 2rem;
+  display: none;
+}
+
+#errorMsg {
+  padding: 1.2rem 0 0 2.5rem;
+  font-size: 1.3rem;
+  color: var(--soft-red);
+  display: none;
+}
+
+.hero-img-wrapper {
+  background-image: url(../images/hero-desktop.jpg);
+  background-size: cover;
+}
+
+/* shake animation */
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(2em);
+  }
+  40% {
+    transform: translate(-2em);
+  }
+  60% {
+    transform: translate(2em);
+  }
+  80% {
+    transform: translate(-2em);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.shake {
+  animation: shake 0.5s;
+}

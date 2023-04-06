@@ -1,0 +1,77 @@
+@media (hover: hover) {
+  button:hover {
+    background-position: right center;
+    transform: scale(1.05);
+    animation-name: gradient;
+    -webkit-animation-name: gradient;
+    animation-duration: 2s;
+    -webkit-animation-duration: s;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@media only screen and (max-width: 26.875em) {
+  html {
+    /* font-size: 50%; */
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img-wrapper {
+    display: none;
+  }
+
+  .hero-wrapper {
+    background-image: none;
+    padding: 0rem;
+  }
+
+  .hero-logo {
+    width: 12rem;
+    margin: 4rem;
+  }
+
+  .mobile-hero-image {
+    display: block;
+    background-image: url(../images/hero-mobile.jpg);
+    background-size: cover;
+    height: 25rem;
+  }
+
+  .hero-introduction {
+    text-align: center;
+    padding: 8rem 4rem;
+  }
+
+  h1 {
+    padding: 0;
+    line-height: 1.1;
+  }
+
+  .hero-introduction-text {
+    max-width: 100%;
+    margin: 3rem 0 3rem 0;
+  }
+
+  .email_form {
+    width: 100%;
+  }
+
+  button {
+    padding: 0 3.5rem 0;
+  }
+}
