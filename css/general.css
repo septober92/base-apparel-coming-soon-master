@@ -50,6 +50,8 @@ body {
 main {
   display: grid;
   grid-template-columns: 55% 1fr;
-  height: 100vh;
+
+  /* height: 100vh; */
   background-image: var(--gradient-whiteish);
+  background-size: cover;
 }
